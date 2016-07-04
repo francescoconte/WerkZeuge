@@ -1,15 +1,16 @@
-.wrapper {position: relative; display: block; float: left; width: 100%; min-height: 100%;}
+.wrapper {position: relative; display: block;  width: 100%; min-height: 100%; min-width: 960px;}
 
 .content {position: relative; display: block; margin: 0 auto; width: 940px;}
 
 h1 {font-family: @fonttxt; color: @colfirm; font-size: 30px; padding-bottom: 16px;} 
 
-h2, h3, h4, h5 {width: 100%; float: left; font-family: @fontb2; color: @coltxt; padding-bottom: 16px; font-weight: 400;} 
+h2, h3, h4, h5, h6 {width: 100%; float: left; font-family: @fontb2; color: @coltxt; padding-bottom: 16px; font-weight: 400;} 
 
 h2 {font-size: 25px}
 h3 {font-size: 21px}
 h4 {font-size: 18px}
 h5 {font-size: 16px;}
+h6 {font-size: 15px; color: #b8b8b8;}
 
 
 .uut {
@@ -119,7 +120,8 @@ li.active {a{color:@colfirm;}}
 
 .flat-block {float: left; width: 100%; padding-bottom: 45px;
 .content { margin-top: 40px;}
-    
+ 
+    .flate {display: block; float: left; width: 100%; margin-left: -20px; width: 960px;}   
 .f-one {  float: left; width: 300px; height: 300px; box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.18); margin-right: 20px;
 padding: 0px 15px 24px;      
 .h-titl {display: table; height: 70px; width: 100%; padding-top: 6px;  border-bottom: solid 1px #a7b3bd;
@@ -135,7 +137,7 @@ span {display: table-cell; vertical-align: middle; font-family: @fontb2; font-si
 .uut {position: relative; display: block; margin: 0 auto; margin-top: 18px;
 }
     
-}.f-three { margin-right: 0px;}
+}
     
 }
 
@@ -184,10 +186,12 @@ font-size: 20px; text-transform:uppercase; color: #b5bdc3; font-weight: 300;
 .sub-menu {float: left; width: 100%; border: solid 2px @coltxt; padding: 34px;
 .sub-title{float: left; width: 100%; width: 100%; font-size: 18px;  padding: 0 0 18px;  font-weight: 400;}  
     ul {border-bottom: solid 1px @coltxt; float: left; width: 100%; padding-bottom: 8px; margin-bottom: 18px; }
+    ul:last-child{border-bottom: solid 0px;}
 li {position: relative; float: left; width: 100%; width: 100%; font-size: 14px;  padding: 12px 0;  font-weight: 400;
     a {margin-left: 27px;} .active {color: @colfirm}}
     li::before {content: '';   position: absolute; left: 10px; top:18px; width: 5px; height: 5px; background: @colfirm;}
-}    
+} 
+   
 }
 article {width: 620px; float: right; margin-top: 45px;}
 p{width:100%; float: left;  font-size: 15px;
@@ -232,11 +236,11 @@ li::before {
 
 p {.uut {float: left;}}
 
-.table1 {position: relative; float: left; margin: 16px 0;}  
+table {position: relative; float: left; margin: 16px 0;}  
     
 
 tr{border-bottom: solid 1px #262626;  height: 50px; }
-tr.up {border-bottom: solid 2px #262626; vertical-align: top; height: 30px;
+tr:first-child  {border-bottom: solid 2px #262626; vertical-align: top; height: 30px;
 td{font-weight: 700}    
 }
 td {
@@ -247,18 +251,19 @@ font-weight: 400;
 font-family: 'Arial';}    
   
 }
-td.end {border-right: solid 0px #262626;}
+td:last-child {border-right: solid 0px #262626;}
 
-tr.end {border-bottom: solid 0px #262626;}
-
-
+tr:last-child {border-bottom: solid 0px #262626;}
 
 
 
 
 
 
-footer {position:absolute; left:0px; bottom: 0px; width: 100%; background: #ebedee; height: 130px;
+
+
+footer {position:relative; float: left; width: 100%; background: #ebedee; height: 130px; min-width: 980px;
+    .content {background: #ebedee;}
 .logo-r {display: block; float: left; width: 111px; height: 75px; background: url(../img/logo-r.png); margin-top: 30px;}
 .linked {float: right; margin-top: 50px; width: 205px;
 span {display: block; font-family: 'Arial'; font-size: 14px; color:#b5bdc3; padding-bottom: 10px;} 
